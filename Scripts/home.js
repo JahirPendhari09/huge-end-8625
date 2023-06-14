@@ -8,13 +8,8 @@ let imageArr=[
 
 let count=0;
 
-// display(imageArr);
-
-// function display(data){
-    for(let i=0; i<imageArr.length; i++) {
-        let image= document.createElement("img");
-        // image.src= imageArr[i];
-        image.setAttribute("src",imageArr[i]);
-        container.append(image)
-    };
-// }
+for(let i=0; i<imageArr.length; i++) {
+    let image= document.createElement("img");
+    image.setAttribute("src",imageArr[i]);
+    container.append(image)
+};

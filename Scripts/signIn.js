@@ -15,10 +15,10 @@ form.addEventListener("submit",function(){
         }
     });
    if(isPresent){
-    alert("login Successful");
+    alert("login Successful you are redirecting to home page");
     window.location.href="./home.html"
    }else{
-    alert("username and password are Incorrect")
+    alert("username and password are incorrect")
    }
    
 });

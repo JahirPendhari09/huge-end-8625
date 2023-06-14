@@ -24,7 +24,7 @@ form.addEventListener("submit",function(){
     LS.push(obj);
     localStorage.setItem("login",JSON.stringify(LS));
     window.location.href="./signIn.html"
-    alert("Signup Successfully Done");
+    alert("Signup Successfully Done you are redirecting to login page");
    
    }else{
     alert("Username Already Used")

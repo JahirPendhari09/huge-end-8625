@@ -3,7 +3,7 @@ let LS = JSON.parse(localStorage.getItem("login"))||[];
 let user = document.getElementById("signinUsername");
 let pas = document.getElementById("signinPassword");
 
-// let btn=document.getElementById("btn");
+
 let form = document.querySelector("form")
 form.addEventListener("submit",function(){
     event.preventDefault();
@@ -15,10 +15,10 @@ form.addEventListener("submit",function(){
         }
     });
    if(isPresent){
-    alert("login Successful");
+    alert("login Successful done you are Redirecting to the Home page");
     window.location.href="./home.html"
    }else{
-    alert("username and password are Incorrect")
+    alert("username and password are incorrect")
    }
    
 });

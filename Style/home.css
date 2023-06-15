@@ -1,10 +1,11 @@
 *{
     box-sizing: border-box;
     text-decoration: none;
-    /* overflow: hidden; */
 }
 body{
-    font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans',sans-serif;
 }
 
 #cont {
@@ -18,68 +19,42 @@ body{
     position: sticky;
     padding: 0 20px;
     margin-top: -8px;
-    /* margin-left: -4px; */
-    font-size: 17px;
+    font-size: 20px;
 }
-#logo:hover{
+#logo{
+    /* height: 60%; */
+    width: 30%;
+    margin-top: 15px;
+}
+#logo img{
+    width: 50%;
+    height: 80%;
+}
+#logo img:hover{
     cursor: pointer;
 }
 #nav1 {
-    width: 60%;
+    width: 70%;
     height: 80px;
 }
 #nav1 ul{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding-right: 20px;
 }
 #nav1 ul li {
     display: inline-block;
 }
 
-#logo{
-    height: 60%;
-    width: 200px;
-    margin-top: 15px;
-}
-
 #btn {
     height: 40px;
     font-size: 16px;   
-    border-radius: 15px;
+    border-radius: 10px;
 }
 #btn:hover{
     background-color:burlywood;
-}
-.hamburg {
-    display: none;
-}
-.hamburg img{
-    width: 50px;
-    height: 50%;
-    cursor: pointer;
-    margin-top: 15px;
-}
-.hamburger{
-    display: none;
-    background-color: blueviolet;
-    margin-left: 60%;
-    width: 40%;
-}
-.hamburger ul {
-    margin-top: 0;
-    /* display: none; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 10px;
-}
-
-.hamburger ul li {
-    font-size: 20px;
-    display: inline-block;
 }
 #container{
     width: 100%;
@@ -103,23 +78,93 @@ body{
     color: blue;
 }
 
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.nav li a:hover{
+    border: 1px solid #fff;
+}
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 1s ease;
+    display: none;
+}
+.nav li{
+    list-style: none;
+    padding: 16px 0;
+}
+.nav li button{
+    background-color: black;
+}
+.icon .bar {
+    background-color: #fff;
+}
+
+.icon #bar1{
+    transform: translateY(4px) rotate(-45deg);
+}
+.icon #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+.icon #bar2{
+    opacity: 0;
+}
+.change {
+    background-color: #f55c47;
+    position: relative;
+    font-size: 20px;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media all and (min-width:501px) and (max-width:1000px){
     #nav1{
        display: none;
     }
-    .hamburg{
-        display: block;
-    }
     #logo{
-        width: 100px;
-        height: 50%;
+        width: 50%;
+        height: 80%;
     }
     #thank{
         font-size: 30px;
     }
     #thankDescription{
         font-size: 15px;
+        padding: 0 15px 0 15px;
+    }
+    #menu {
+        display: block;
     }
 
 }
@@ -127,22 +172,20 @@ body{
     #nav1{
        display: none;
     }
-    .hamburg{
-        display: block;
-        height: 100%;
-    }
     #logo{
-        width: 70px;
-        height: 50%;
-    }
-    #cont{
-        height: 50px;
+        width: 50%;
+        height: 80%;
     }
     #thank{
         font-size: 25px;
     }
     #thankDescription{
         font-size: 12px;
+        padding: 0 15px 0 15px;
+    }
+    #menu {
+        display: block;
+        height: 2px;
     }
 }
 

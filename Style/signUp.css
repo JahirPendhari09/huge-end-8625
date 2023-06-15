@@ -3,7 +3,6 @@
     text-decoration: none;
 }
 body{
-    /* background-color: rgb(186, 228, 228); */
     font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-image: url("https://slidebazaar.com/wp-content/uploads/2022/09/Welcome-PowerPoint-Presentation-Template.jpg");
     background-position: center;
@@ -45,7 +44,7 @@ label {
     margin-top: 20px;
 }
 #btn:hover{
-    background-color:blue;
+    background-color:green;
 }
 #signinLink{
     color: blue;
@@ -56,12 +55,19 @@ label {
         width:60%;
         margin: auto;
     }
+    body{
+        background-image: none;
+        background-color:cornsilk
+    }
 
 }
 @media(max-width:500px){
     #cont{
         width:100%;
         margin: auto;
+    }
+    body{
+        background-image: none;
     }
 
 }

@@ -11,8 +11,8 @@ body{
 }
 
 #cont{
-    width: 500px;
-    height: 600px;
+    width: 30%;
+    height: 500px;
     border-radius: 10px;
     margin-left: 50%;
     margin-top: 80px;
@@ -38,9 +38,9 @@ label {
 }
 
 #btn{
-    width: 200px;
-    height: 40pX;
-    margin-left: 25%;
+    width: 30%;
+    height: 40px;
+    margin-left: 30%;
     cursor: pointer;
     margin-top: 20px;
 }
@@ -50,11 +50,16 @@ label {
 #signupLink{
     color: blue;
 }
-@media all and (max-width:1000px) {
+@media(max-width:1000px){
     #cont{
-        width: 300px;
+        width:60%;
+        margin: auto;
     }
-    body{
-        background-color: azure;
+}
+@media(max-width:500px){
+    #cont{
+        width:100%;
+        margin: auto;
     }
+
 }

@@ -16,7 +16,7 @@ form.addEventListener("submit",function(){
     });
    if(isPresent){
     alert("login Successful done you are Redirecting to the Home page");
-    window.location.href="./home.html"
+    window.location.href="./home1.html"
    }else{
     alert("username and password are incorrect")
    }

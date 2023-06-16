@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'PT Sans',sans-serif;
 }
 
 #cont {
@@ -55,6 +55,28 @@ body{
 #btn:hover{
     background-color:burlywood;
 }
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+}
+#container img{
+    width: 100%;
+}
+
+#thank{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+#thankDescription{
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+}
+
 #menu {
     width: 35px;
     height: 30px;
@@ -124,102 +146,6 @@ body{
     justify-content: center;
 }
 
-#about{
-    width: 100%;
-    height: 400px;
-}
-.aboutDesc{
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-.container1{
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: auto;
-    text-align: justify;
-}
-.container1 div{
-    padding: 10px 20px 10px 20px;
-}
-.container1 div img{
-    width: 100%;
-}
-#header{
-    font-size: 50px;
-    font-weight: 800;
-    color: rgb(20, 105, 105);
-}
-
-#firstPara{
-    font-size: 22px;
-}
-p{
-    font-size: 18px;
-}
-
-.container2 {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: auto;
-    text-align: justify;
-}
-.container2 div {
-    padding: 10px 20px 10px 20px;
-}
-.container2 div img{
-    margin-top: 10%;
-    width: 50%;
-    border-radius: 15px;
-}
-.container3 {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: auto;
-    text-align: justify;
-}
-.container3 div {
-    padding: 10px 20px 10px 20px;
-}
-.container3 div ul li{
-    padding-top: 10px;
-}
-.container3 div img{
-    margin-top: 20%;
-    width: 50%;
-    margin-left: 25%;
-    border-radius: 50%;
-}
-b {
-    font-size: 18px;
-}
-.header{
-    text-align: center;
-}
-
-#container4{
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 10px;
-    margin: auto;
-}
-
-#container4 div{
-    background-color: lightseagreen;
-    text-align: center;
-    color:#fff;
-    border-radius: 10px;
-    overflow: hidden;
-}
-#container4 div img {
-    width: 100%;
-    cursor: pointer;
-}
-
 #footer{
     width: 100%;
     color: #fff;
@@ -259,6 +185,7 @@ b {
     text-decoration: none;
     color:darkorange;
 }
+
 @media all and (min-width:501px) and (max-width:1000px){
     #nav1{
        display: none;
@@ -267,44 +194,15 @@ b {
         width: 50%;
         height: 80%;
     }
+    #thank{
+        font-size: 30px;
+    }
+    #thankDescription{
+        font-size: 15px;
+        padding: 0 15px 0 15px;
+    }
     #menu {
         display: block;
-    }
-    .container1{
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-    .container1 div img{
-        margin-top: 0;
-        width: 100%;
-    }
-    .container2{
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-    .container2 div img{
-        margin-top: 0;
-        width: 100%;
-    }
-    .container3{
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-    .container3 div img{
-        margin-top: 0;
-        width: 50%;
-        margin-left: 25%;
-    }
-    #container4{
-        width: 90%;
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px;
-    }
-    #header{
-        font-size: 30px;
     }
     #footer {
         grid-template-columns: repeat(1,1fr);
@@ -312,6 +210,7 @@ b {
     #footer div {
         padding-left: 10%;
     }
+
 
 }
 @media (max-width:500px){
@@ -322,47 +221,16 @@ b {
         width: 50%;
         height: 80%;
     }
+    #thank{
+        font-size: 25px;
+    }
+    #thankDescription{
+        font-size: 12px;
+        padding: 0 15px 0 15px;
+    }
     #menu {
         display: block;
         height: 2px;
-    }
-    #about{
-        height: 200px;
-    }
-    .container1{
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-    .container1 div img{
-        margin-top: 0;
-        width: 100%;
-    }
-    .container2{
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-    .container2 div img{
-        margin-top: 0;
-        width: 100%;
-    }
-    .container3{
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-    .container3 div img{
-        margin-top: 0;
-        width: 50%;
-        margin-left: 25%;
-    }
-    #container4{
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-    #header{
-        font-size: 30px;
     }
     #footer {
         grid-template-columns: repeat(1,1fr);
@@ -372,6 +240,5 @@ b {
         padding-left: 10%;
         
     }
-    
 }
 

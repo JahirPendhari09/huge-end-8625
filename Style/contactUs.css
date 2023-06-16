@@ -14,7 +14,7 @@ body{
     display: flex;
     height: 80px;
     justify-content: space-between;
-    background-color: #fff;
+    background-color:aqua;
     color: black;
     position: sticky;
     padding: 0 20px;
@@ -124,6 +124,13 @@ body{
     justify-content: center;
 }
 
+#header{
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(20, 105, 105);
+}
+
+
 .container {
     width: 90%;
     margin: auto;
@@ -131,15 +138,27 @@ body{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
 }
+
 .container >div{
+    margin-top: 20px;
     border: 2px solid black;
+    padding-left: 10%;
+}
+.container >div:nth-child(2){
+    background-color: antiquewhite;
+    font-size: 25px;
 }
 
-
-
-
-
-
+#form{
+    width: 80%;
+    height: 50px;
+}
+#contactData{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 10%;
+}
 
 
 #footer{

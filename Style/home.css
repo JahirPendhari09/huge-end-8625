@@ -14,7 +14,7 @@ body{
     display: flex;
     height: 80px;
     justify-content: space-between;
-    background-color: #fff;
+    background-color:aqua;
     color: black;
     position: sticky;
     padding: 0 20px;

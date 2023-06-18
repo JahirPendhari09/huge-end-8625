@@ -19,6 +19,12 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding-left: 40px;
 }
+#header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    color:greenyellow
+}
 
 h2 {
     padding-top: 60px;
@@ -59,6 +65,9 @@ label {
         background-image: none;
         background-color:cornsilk
     }
+    #header {
+        color: red;
+    }
 
 }
 @media(max-width:500px){
@@ -68,6 +77,9 @@ label {
     }
     body{
         background-image: none;
+    }
+    #header {
+        color: green;
     }
 
 }

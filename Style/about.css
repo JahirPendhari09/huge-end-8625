@@ -217,7 +217,12 @@ b {
 }
 #container4 div img {
     width: 100%;
+}
+
+#container4 div:hover{
     cursor: pointer;
+    background: lightcoral;
+    transition: 1.5s ease;
 }
 
 #footer{

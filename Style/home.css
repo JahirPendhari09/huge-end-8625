@@ -41,7 +41,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
 }
 #nav1 ul li {
     display: inline-block;
@@ -163,7 +162,7 @@ body{
 }
 #footer >div >div{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     padding-left: 0;
 }
 #footer >div >div p a{
@@ -186,7 +185,7 @@ body{
     color:darkorange;
 }
 
-@media all and (min-width:501px) and (max-width:1000px){
+@media all and (min-width:481px) and (max-width:768px){
     #nav1{
        display: none;
     }
@@ -213,7 +212,7 @@ body{
 
 
 }
-@media (max-width:500px){
+@media (max-width:480px){
     #nav1{
        display: none;
     }
